@@ -4,7 +4,7 @@
     <title>live cam 录像页面</title>
 </head>
 <body>
-    <video autoplay id="sourcevid" style="width:320;height:240px"></video>
+    <video autoplay id="sourcevid" style="width:960px;height:720px"></video>
 
     <canvas id="output" style="display:none"></canvas>
 
@@ -28,7 +28,7 @@
                 backcontext.drawImage(video,0,0, back.width, back.height);
             }catch(e){
                 if (e.name == "NS_ERROR_NOT_AVAILABLE") {
-                    return setTimeout(draw, 100);
+                    return setTimeout(draw, 5000);
                 } else {
                     throw e;
                 }
