@@ -32,4 +32,3 @@ foreach(glob(__DIR__.'/Applications/*/start.php') as $start_file)
 Worker::runAll();
 
 
-
