@@ -30,4 +30,3 @@ foreach(glob(__DIR__.'/Applications/*/start.php') as $start_file)
 }
 // 运行所有服务
 Worker::runAll();
-
